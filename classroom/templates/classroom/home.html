@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to E-Exam website! <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new to, get started
+    by creating a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
+  </p>
+  <hr>
+  <h3>What's this about?</h3>
+  <p>
+    This Django application is an example we created to make it easier to take and made quizzes,
+    In this application users can sign up as a student or a teacher. Teachers can create quizzes and students can answer quizzes
+    based on their level at college.
+
+    This Django application is an example we created to make it easier to take and made quizzes,
+    In this application users can sign up as a student or a teacher. Teachers can create quizzes and students can answer quizzes
+    based on their level at college.
+
+  </p>
+
+
+{% endblock %}
