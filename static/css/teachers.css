@@ -1,0 +1,7 @@
+body {
+  background: url('../img/study.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+
+}
