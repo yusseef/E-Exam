@@ -15,4 +15,12 @@ path('teachers/', include(([
         path('quiz/<int:quiz_pk>/question/<int:question_pk>/', teachers.question_change, name='question_change'),
         path('quiz/<int:quiz_pk>/question/<int:question_pk>/delete/', teachers.QuestionDeleteView.as_view(), name='question_delete'),
     ], 'classroom'), namespace='teachers')),
+    
+ path('students/', include(([
+        path('', students.QuizListView.as_view(), name='quiz_list'),
+        path('interests/', students.StudentInterestsView.as_view(), name='student_interests'),
+        path('taken/', students.TakenQuizListView.as_view(), name='taken_quiz_list'),
+        path('quiz/<int:pk>/', students.take_quiz, name='take_quiz'),
+    ], 'classroom'), namespace='students')),
+    
 ]
